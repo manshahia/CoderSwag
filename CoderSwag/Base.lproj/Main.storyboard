@@ -34,7 +34,7 @@
                                 <rect key="frame" x="0.0" y="59" width="375" height="544"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="157" id="cHT-Lb-FmD" customClass="CategoryCell" customModule="CoderSwag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="157" id="cHT-Lb-FmD" customClass="CategoryCell" customModule="CoderSwag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="157"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cHT-Lb-FmD" id="BF1-au-ysZ">
@@ -42,7 +42,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="ODC-QB-lOH">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="156.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="157"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHIRTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkw-A0-emo">
                                                     <rect key="frame" x="91" y="66" width="193" height="25"/>
@@ -56,17 +56,14 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="ODC-QB-lOH" firstAttribute="top" secondItem="BF1-au-ysZ" secondAttribute="top" id="46D-a2-ici"/>
                                                 <constraint firstItem="zkw-A0-emo" firstAttribute="centerY" secondItem="BF1-au-ysZ" secondAttribute="centerY" id="6kY-MJ-hqx"/>
-                                                <constraint firstAttribute="bottom" secondItem="ODC-QB-lOH" secondAttribute="bottom" id="AX2-p7-fgr"/>
+                                                <constraint firstAttribute="trailing" secondItem="ODC-QB-lOH" secondAttribute="trailing" id="CG7-Gr-23Z"/>
+                                                <constraint firstAttribute="bottom" secondItem="ODC-QB-lOH" secondAttribute="bottom" id="Dzf-Sk-XJW"/>
+                                                <constraint firstItem="ODC-QB-lOH" firstAttribute="leading" secondItem="BF1-au-ysZ" secondAttribute="leading" id="aAb-kC-gl6"/>
                                                 <constraint firstItem="zkw-A0-emo" firstAttribute="centerX" secondItem="BF1-au-ysZ" secondAttribute="centerX" id="cER-cp-feg"/>
-                                                <constraint firstItem="ODC-QB-lOH" firstAttribute="top" secondItem="BF1-au-ysZ" secondAttribute="top" id="dFz-Ii-lNS"/>
-                                                <constraint firstAttribute="trailing" secondItem="ODC-QB-lOH" secondAttribute="trailing" id="lR1-1e-wff"/>
-                                                <constraint firstItem="ODC-QB-lOH" firstAttribute="leading" secondItem="BF1-au-ysZ" secondAttribute="leading" id="vP2-zh-HjK"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <constraints>
-                                            <constraint firstItem="ODC-QB-lOH" firstAttribute="leading" secondItem="cHT-Lb-FmD" secondAttribute="leading" id="suK-AV-QwQ"/>
-                                        </constraints>
                                         <connections>
                                             <outlet property="categoryImage" destination="ODC-QB-lOH" id="cCF-Ip-UFp"/>
                                             <outlet property="categoryLabel" destination="zkw-A0-emo" id="7Ua-FU-CCF"/>

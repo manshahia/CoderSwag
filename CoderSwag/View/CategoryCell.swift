@@ -18,7 +18,11 @@ class CategoryCell: UITableViewCell {
         // Initialization code
     }
     
-    
+    func updateCellView(for category: Category)
+    {
+        self.categoryLabel.text = category.categoryName
+        self.categoryImage.image = UIImage(named: category.imageName)
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
