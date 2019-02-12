@@ -35,9 +35,20 @@ class CategoriesVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let category = CategoryService.instance.getCategories()[indexPath.row]
+        let categoryName = category.categoryName
+        performSegue(withIdentifier: "PoductsVC", sender: categoryName)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let productsVC = segue.destination as? PoductsVC
+        {
+            assert(sender as? String != nil)
+            productsVC.initProducts(forCategory: sender as! String)
+        }
     }
 
 

@@ -87,17 +87,17 @@
                     <navigationItem key="navigationItem" title="CODER SWAG" id="ny7-w3-akh"/>
                     <connections>
                         <outlet property="tableview" destination="A4B-pZ-979" id="LWr-Fk-aXm"/>
-                        <segue destination="lKr-09-wH4" kind="show" id="fvm-Bf-0h6"/>
+                        <segue destination="lKr-09-wH4" kind="show" identifier="PoductsVC" id="fvm-Bf-0h6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="239.19999999999999" y="118.29085457271366"/>
         </scene>
-        <!--View Controller-->
+        <!--PoductsVC-->
         <scene sceneID="Ccl-Md-NOz">
             <objects>
-                <viewController id="lKr-09-wH4" sceneMemberID="viewController">
+                <viewController id="lKr-09-wH4" customClass="PoductsVC" customModule="CoderSwag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="orH-qQ-2M9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -187,6 +187,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Xf0-88-tvr"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="ZdE-VE-wWu" id="ehf-Ml-MY1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SGz-s3-61a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

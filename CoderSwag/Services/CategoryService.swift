@@ -70,11 +70,11 @@ class CategoryService {
     func getProducts(for category: String) -> [Product]
     {
         switch category {
-        case "Shirts":
+        case "SHIRTS":
             return getSHirts()
-        case "Hoodies":
+        case "HOODIES":
             return getHoodies()
-        case "Hats":
+        case "HATS":
             return getHats()
         default:
             return getSHirts()

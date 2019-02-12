@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		326E8D602213198E006E9B28 /* ProductsCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326E8D5F2213198E006E9B28 /* ProductsCVCell.swift */; };
 		326E8D6222131E4A006E9B28 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326E8D6122131E4A006E9B28 /* Product.swift */; };
+		326E8D6422132427006E9B28 /* PoductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326E8D6322132427006E9B28 /* PoductsVC.swift */; };
 		326F4821221299DF00B9758B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326F4820221299DF00B9758B /* AppDelegate.swift */; };
 		326F4823221299DF00B9758B /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326F4822221299DF00B9758B /* CategoriesVC.swift */; };
 		326F4826221299DF00B9758B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 326F4824221299DF00B9758B /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		326E8D5F2213198E006E9B28 /* ProductsCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCVCell.swift; sourceTree = "<group>"; };
 		326E8D6122131E4A006E9B28 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		326E8D6322132427006E9B28 /* PoductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoductsVC.swift; sourceTree = "<group>"; };
 		326F481D221299DF00B9758B /* CoderSwag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoderSwag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		326F4820221299DF00B9758B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		326F4822221299DF00B9758B /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				326F4822221299DF00B9758B /* CategoriesVC.swift */,
+				326E8D6322132427006E9B28 /* PoductsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				326E8D6222131E4A006E9B28 /* Product.swift in Sources */,
 				326F4821221299DF00B9758B /* AppDelegate.swift in Sources */,
 				326F48362212A59E00B9758B /* CategoryCell.swift in Sources */,
+				326E8D6422132427006E9B28 /* PoductsVC.swift in Sources */,
 				326F48382212AEB700B9758B /* Category.swift in Sources */,
 				326F483B2212AF7800B9758B /* CategoryService.swift in Sources */,
 			);
